@@ -19,6 +19,8 @@ type ErrorVerificationInconclusive struct {
 	Msg string
 }
 
+
+
 func (e ErrorVerificationInconclusive) Error() string {
 	if e.Msg != "" {
 		return e.Msg
