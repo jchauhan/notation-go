@@ -13,6 +13,9 @@ func (e ErrorPushSignatureFailed) Error() string {
 	return "failed to push signature to registry"
 }
 
+
+
+
 // ErrorVerificationInconclusive is used when signature verification fails due
 // to a runtime error (e.g. a network error)
 type ErrorVerificationInconclusive struct {
