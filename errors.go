@@ -6,6 +6,8 @@ type ErrorPushSignatureFailed struct {
 	Msg string
 }
 
+
+
 func (e ErrorPushSignatureFailed) Error() string {
 	if e.Msg != "" {
 		return "failed to push signature to registry with error: " + e.Msg
